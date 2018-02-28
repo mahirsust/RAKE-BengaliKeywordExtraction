@@ -1,0 +1,13 @@
+https://www.airpair.com/nlp/keyword-extraction-tutorial#3-1-setting-up-rake
+
+https://www.wiley.com/en-gb/Text+Mining%3A+Applications+and+Theory-p-9780470749821
+
+https://github.com/davidadamojr/TextRank
+
+https://www.slideshare.net/sujitdas750331/token-classification-using-bengali-tokenizer
+
+https://stackoverflow.com/questions/10103343/splitting-text-by-a-unicode-script-in-python
+
+https://stackoverflow.com/questions/24358361/removing-u2018-and-u2019-character
+
+
