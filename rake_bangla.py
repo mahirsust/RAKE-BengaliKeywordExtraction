@@ -93,7 +93,7 @@ def split_sentences(text):
     
     sentence_delimiters = re.compile(u'[৷\u002f\u0053\u0056\u00a0\u00ad\u00d0\u00da\u00e6\u00f2\u00f3\u2013\u2014\\[\\]\n!?,;:\।\t\\"\\(\\)\\\'\‘\‘‘]')
     sentences = sentence_delimiters.split(text)
-    print(sentences, file=open("bangla_splitted_sentence.txt", "a", encoding='utf8'))
+    #print(sentences, file=open("bangla_splitted_sentence.txt", "a", encoding='utf8'))
 
     return sentences
 
@@ -394,7 +394,7 @@ if test:
 
     # text = "Compatibility of systems of linear constraints over the set of natural numbers. Criteria of compatibility of a system of linear Diophantine equations, strict inequations, and nonstrict inequations are considered. Upper bounds for components of a minimal set of solutions and algorithms of construction of minimal generating sets of solutions for all types of systems are given. These criteria and the corresponding algorithms for constructing a minimal supporting set of solutions can be used in solving all the considered types of systems and systems of mixed types."
 
-    sample_file = open('I:/cse21/4-2/Thesis/RAKE/RAKE-tutorial/bdtext.txt', 'r',encoding='utf8')
+    sample_file = open('H:/xampp/htdocs/RAKE-BengaliKeywordExtraction/bdtext.txt', 'r',encoding='utf8')
     text = sample_file.read()
 
     # Split text into sentences
@@ -403,7 +403,7 @@ if test:
 
     # stoppath = "FoxStoplist.txt" #Fox stoplist contains "numbers", so it will not find "natural numbers" like in Table 1.1
 
-    stoppath = 'I:/cse21/4-2/Thesis/RAKE/RAKE-tutorial/stopword.txt'  # SMART stoplist misses some of the lower-scoring keywords in Figure 1.5, which means that the top 1/3 cuts off one of the 4.0 score words in Table 1.1
+    stoppath = 'H:/xampp/htdocs/RAKE-BengaliKeywordExtraction/stopword.txt'  # SMART stoplist misses some of the lower-scoring keywords in Figure 1.5, which means that the top 1/3 cuts off one of the 4.0 score words in Table 1.1
     stopwordpattern = build_stop_word_regex(stoppath)
     #print(stopwordpattern)
     # generate candidate keywords
@@ -432,7 +432,7 @@ if test:
     # if debug: print(totalKeywords)
     # print(sortedKeywords[0:(totalKeywords // 3)])
 
-    rake = Rake('I:/cse21/4-2/Thesis/RAKE/RAKE-tutorial/stopword.txt')
+    rake = Rake('H:/xampp/htdocs/RAKE-BengaliKeywordExtraction/stopword.txt')
     keywords = rake.run(text)
     print(keywords, file=open("output.txt", "a", encoding='utf8'))
 

@@ -1,5 +1,5 @@
 from nltk import ngrams
-sample_file = open('I:/cse21/4-2/Thesis/RAKE/RAKE-tutorial/oneline_bangla.txt', 'r',encoding='utf8')
+sample_file = open('H:/xampp/htdocs/RAKE-BengaliKeywordExtraction/oneline_bangla.txt', 'r',encoding='utf8')
 text = sample_file.read()
 n = 3
 sixgrams = ngrams(text.split(), n)
